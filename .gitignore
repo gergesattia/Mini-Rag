@@ -1,0 +1,56 @@
+
+# Environment variables and secrets
+.env
+.env.*
+!.env.example
+
+# Dependencies
+node_modules/
+vendor/
+
+# Build outputs
+dist/
+build/
+out/
+target/
+
+# Logs
+*.log
+logs/
+
+# IDEs and editors
+.vscode/
+.idea/
+*.iml
+
+# Operating system files
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Python
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+.pytest_cache/
+
+# Java
+*.class
+*.jar
+*.war
+.gradle/
+target/
+
+# Temporary files
+*.tmp
+*.temp
+*.bak
+
+# Test and coverage
+coverage/
+.nyc_output/
+
+# Large files
+*.zip
+*.rar
