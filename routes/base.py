@@ -9,7 +9,7 @@ router = APIRouter(
 
 @router.get("/")
 
-def welcome_message():
+async def welcome_message():
     app_name = os.getenv('APP_NAME')
     return {
         "message": f"Welcome to {app_name} API!"
