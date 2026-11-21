@@ -4,7 +4,7 @@ import os
 
 app = FastAPI()
 router = APIRouter(
-    prefix="/api",
+    prefix="",
 )
 
 @router.get("/")
@@ -12,5 +12,5 @@ router = APIRouter(
 async def welcome_message():
     app_name = os.getenv('APP_NAME')
     return {
-        "message": f"Welcome to {app_name} API!"
+        "message": app_name
         }

@@ -1,8 +1,9 @@
+from pathlib import Path
 from fastapi import FastAPI
 from dotenv import load_dotenv
-from source.routes import base
+from src.routes import base
 
-load_dotenv("\.env")  # Load environment variables from .env file
+load_dotenv(Path(__file__).resolve().parent / ".env")
 
 app = FastAPI()
 app.include_router(base.router)
